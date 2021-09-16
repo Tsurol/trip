@@ -1,0 +1,556 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-11 20:24+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\accounts\apps.py:8 .\accounts\apps.py:9
+msgid "accounts"
+msgstr "用户"
+
+#: .\accounts\bussiness.py:69
+msgid "Invalid nickname"
+msgstr "非法昵称"
+
+#: .\accounts\bussiness.py:75
+msgid "Invalid password"
+msgstr "非法密码"
+
+#: .\accounts\bussiness.py:83
+msgid "Invalid email format"
+msgstr "非法邮箱格式"
+
+#: .\accounts\bussiness.py:87 .\accounts\bussiness.py:89
+#: .\accounts\bussiness.py:141 .\accounts\bussiness.py:143
+msgid "Invalid email code"
+msgstr "非法邮箱验证码"
+
+#: .\accounts\bussiness.py:95
+msgid "Invalid phone format"
+msgstr "非法手机格式"
+
+#: .\accounts\bussiness.py:100 .\accounts\bussiness.py:102
+#: .\accounts\bussiness.py:149 .\accounts\bussiness.py:151
+msgid "Invalid phone code"
+msgstr "非法手机验证码"
+
+#: .\accounts\bussiness.py:156 .\accounts\bussiness.py:161
+#: .\accounts\views.py:113 .\accounts\views.py:127 .\sight\views.py:27
+#: .\sight\views.py:43 .\sight\views.py:60 .\sight\views.py:75
+#: .\sight\views.py:89 .\sight\views.py:103 .\sight\views.py:117
+#: .\system\views.py:24
+msgid "Resource not found"
+msgstr "资源未找到"
+
+#: .\accounts\bussiness.py:175
+msgid "login error"
+msgstr "登录出错"
+
+#: .\accounts\models.py:48
+msgid "avatar"
+msgstr "头像"
+
+#: .\accounts\models.py:49
+msgid "nickname"
+msgstr "昵称"
+
+#: .\accounts\models.py:50
+msgid "phone number"
+msgstr "手机号"
+
+#: .\accounts\models.py:51
+msgid "email address"
+msgstr "邮箱地址"
+
+#: .\accounts\models.py:56 .\accounts\models.py:57
+msgid "User"
+msgstr "用户"
+
+#: .\accounts\models.py:70 .\accounts\models.py:84
+msgid "username"
+msgstr "用户名"
+
+#: .\accounts\models.py:71
+msgid "real name"
+msgstr "真实姓名"
+
+#: .\accounts\models.py:72
+msgid "sex"
+msgstr "性别"
+
+#: .\accounts\models.py:73
+msgid "age"
+msgstr "年龄"
+
+#: .\accounts\models.py:74 .\utils\models.py:8
+msgid "created at"
+msgstr "创建时间"
+
+#: .\accounts\models.py:75 .\utils\models.py:9
+msgid "updated at"
+msgstr "更新时间"
+
+#: .\accounts\models.py:76 .\accounts\models.py:92 .\order\models.py:28
+#: .\order\models.py:53 .\order\models.py:83
+msgid "User related"
+msgstr "关联用户"
+
+#: .\accounts\models.py:85 .\sight\models.py:119
+msgid "ip address"
+msgstr "IP地址"
+
+#: .\accounts\models.py:86
+msgid "address"
+msgstr "地址"
+
+#: .\accounts\models.py:88
+msgid "source"
+msgstr "来源"
+
+#: .\accounts\models.py:90
+msgid "version"
+msgstr "版本"
+
+#: .\accounts\models.py:91
+msgid "created_at"
+msgstr "创建时间"
+
+#: .\accounts\serializers.py:30
+msgid "login at"
+msgstr "登录时间"
+
+#: .\accounts\views.py:77 .\accounts\views.py:115 .\accounts\views.py:129
+#: .\order\views.py:29 .\order\views.py:45 .\order\views.py:57
+#: .\order\views.py:69 .\order\views.py:81 .\order\views.py:100
+#: .\sight\views.py:31 .\sight\views.py:45 .\sight\views.py:62
+#: .\sight\views.py:77 .\sight\views.py:91 .\sight\views.py:105
+#: .\sight\views.py:119 .\system\views.py:26
+msgid "Server exception, please try again"
+msgstr "服务器异常，请稍后重试"
+
+#: .\order\apps.py:8 .\order\apps.py:9
+msgid "order"
+msgstr "订单"
+
+#: .\order\business.py:21
+msgid "ticket not found"
+msgstr "没有找到对应门票"
+
+#: .\order\business.py:24
+msgid "ticket remain stock not enough"
+msgstr "门票库存不足"
+
+#: .\order\business.py:80
+msgid "order submit error"
+msgstr "提交订单异常"
+
+#: .\order\business.py:101
+msgid "get order pay error"
+msgstr "获取订单支付页面异常"
+
+#: .\order\business.py:119 .\order\business.py:174
+msgid "user already paid this order"
+msgstr "您已经支付过此订单，请不要重复操作"
+
+#: .\order\business.py:142 .\order\business.py:172
+msgid "pay order error, please check"
+msgstr "支付订单出错，请检查"
+
+#: .\order\business.py:152
+msgid "user already canceled this order"
+msgstr "您已经取消该订单"
+
+#: .\order\business.py:175
+msgid "pay cancel"
+msgstr "已取消支付"
+
+#: .\order\business.py:184
+msgid "this order has already deleted"
+msgstr "该订单已经被删除"
+
+#: .\order\business.py:189
+msgid "order status submit not allow delete"
+msgstr "该订单状态下不允许删除"
+
+#: .\order\business.py:202
+msgid "delete order error, please check"
+msgstr "删除订单异常，请检查"
+
+#: .\order\business.py:203
+msgid "order deleted success"
+msgstr "成功删除订单"
+
+#: .\order\business.py:232
+msgid "order status error, please check"
+msgstr "订单状态异常，请检查"
+
+#: .\order\business.py:235
+msgid "get order list failed"
+msgstr "获取订单列表失败，请重试"
+
+#: .\order\models.py:12
+msgid "order no"
+msgstr "订单流水号"
+
+#: .\order\models.py:13 .\order\models.py:47
+msgid "buy count"
+msgstr "购买数量"
+
+#: .\order\models.py:14 .\order\models.py:48
+msgid "buy amount"
+msgstr "购买总价"
+
+#: .\order\models.py:15
+msgid "receiver"
+msgstr "收货人"
+
+#: .\order\models.py:16 .\sight\models.py:21
+msgid "area"
+msgstr "省市区"
+
+#: .\order\models.py:17 .\order\models.py:18
+msgid "detail address"
+msgstr "详细收货地址"
+
+#: .\order\models.py:19 .\order\models.py:49 .\order\models.py:82
+#: .\sight\models.py:83
+msgid "remark"
+msgstr "备注信息"
+
+#: .\order\models.py:20
+msgid "express type"
+msgstr "快递"
+
+#: .\order\models.py:21
+msgid "express no"
+msgstr "快递单号"
+
+#: .\order\models.py:22
+msgid "order type"
+msgstr "订单状态"
+
+#: .\order\models.py:25 .\order\models.py:50
+msgid "order status"
+msgstr "订单类型"
+
+#: .\order\models.py:31 .\order\models.py:32
+msgid "Order"
+msgstr "订单"
+
+#: .\order\models.py:42
+msgid "flash name"
+msgstr "商品名"
+
+#: .\order\models.py:43
+msgid "flash img"
+msgstr "商品主图"
+
+#: .\order\models.py:44
+msgid "flash origin price"
+msgstr "商品原价"
+
+#: .\order\models.py:45
+msgid "flash price"
+msgstr "商品售价"
+
+#: .\order\models.py:46
+msgid "flash discount"
+msgstr "折扣"
+
+#: .\order\models.py:56 .\order\models.py:86
+msgid "Order related"
+msgstr "关联订单"
+
+#: .\order\models.py:58 .\system\models.py:47
+msgid "model related"
+msgstr "关联模型"
+
+#: .\order\models.py:60 .\system\models.py:49
+msgid "object id"
+msgstr "对象id"
+
+#: .\order\models.py:64 .\order\models.py:65
+msgid "Order_item"
+msgstr "订单明细"
+
+#: .\order\models.py:75
+msgid "amount"
+msgstr "总额"
+
+#: .\order\models.py:76
+msgid "pay no"
+msgstr "订单流水号"
+
+#: .\order\models.py:77
+msgid "third pay sn"
+msgstr "第三方流水号"
+
+#: .\order\models.py:78
+msgid "pay status"
+msgstr "支付状态"
+
+#: .\order\models.py:81
+msgid "meta"
+msgstr "元信息"
+
+#: .\order\models.py:89 .\order\models.py:90
+msgid "Payment"
+msgstr "支付凭证"
+
+#: .\order\serializers.py:10
+msgid "app label"
+msgstr "app"
+
+#: .\order\serializers.py:11
+msgid "model"
+msgstr "模块"
+
+#: .\sight\apps.py:8 .\sight\apps.py:9 .\sight\models.py:33
+#: .\sight\models.py:111
+msgid "sight"
+msgstr "景点"
+
+#: .\sight\models.py:13 .\sight\models.py:65 .\system\models.py:11
+msgid "name"
+msgstr "名称"
+
+#: .\sight\models.py:14 .\sight\models.py:66 .\system\models.py:12
+msgid "desc"
+msgstr "简述"
+
+#: .\sight\models.py:15
+msgid "main_img"
+msgstr "主图"
+
+#: .\sight\models.py:16
+msgid "banner_img"
+msgstr "详细主图"
+
+#: .\sight\models.py:17 .\sight\models.py:114
+msgid "content"
+msgstr "详细"
+
+#: .\sight\models.py:18 .\sight\models.py:117
+msgid "score"
+msgstr "评分"
+
+#: .\sight\models.py:19
+msgid "province"
+msgstr "省份"
+
+#: .\sight\models.py:20
+msgid "city"
+msgstr "市区"
+
+#: .\sight\models.py:22
+msgid "town"
+msgstr "乡镇"
+
+#: .\sight\models.py:23
+msgid "min_price"
+msgstr "最低价格"
+
+#: .\sight\models.py:24
+msgid "is_top"
+msgstr "是否为精选"
+
+#: .\sight\models.py:25
+msgid "is_hot"
+msgstr "是否为热门"
+
+#: .\sight\models.py:32
+msgid "Sight"
+msgstr "景点"
+
+#: .\sight\models.py:45 .\sight\models.py:63
+msgid "Sight related"
+msgstr "关联景点"
+
+#: .\sight\models.py:47
+msgid "entry_explain"
+msgstr "入园参考"
+
+#: .\sight\models.py:48
+msgid "play_types"
+msgstr "特色玩法"
+
+#: .\sight\models.py:49 .\sight\models.py:82
+msgid "tips"
+msgstr "温馨提示"
+
+#: .\sight\models.py:50
+msgid "traffic"
+msgstr "交通到达"
+
+#: .\sight\models.py:53 .\sight\models.py:54
+msgid "SightInfo"
+msgstr "景点详情"
+
+#: .\sight\models.py:67
+msgid "types"
+msgstr "类型"
+
+#: .\sight\models.py:70
+msgid "default adult ticket"
+msgstr "默认为成人票"
+
+#: .\sight\models.py:71
+msgid "original price"
+msgstr "原价"
+
+#: .\sight\models.py:72
+msgid "discount"
+msgstr "折扣"
+
+#: .\sight\models.py:73
+msgid "total stock"
+msgstr "总库存"
+
+#: .\sight\models.py:74
+msgid "remain stock"
+msgstr "剩余库存"
+
+#: .\sight\models.py:75
+msgid "expire date"
+msgstr "有效期"
+
+#: .\sight\models.py:76
+msgid "return policy"
+msgstr "退改政策"
+
+#: .\sight\models.py:77
+msgid "if has invoice"
+msgstr "是否提供发票"
+
+#: .\sight\models.py:78
+msgid "entry_way"
+msgstr "入园方式"
+
+#: .\sight\models.py:84
+msgid "状态"
+msgstr "状态"
+
+#: .\sight\models.py:93 .\sight\models.py:94
+msgid "SightTicket"
+msgstr "景点门票"
+
+#: .\sight\models.py:108
+msgid "commentator"
+msgstr "评论者"
+
+#: .\sight\models.py:115
+msgid "if is top"
+msgstr "是否为精选"
+
+#: .\sight\models.py:116
+msgid "love count"
+msgstr "点赞数"
+
+#: .\sight\models.py:120
+msgid "if is public"
+msgstr "是否公开"
+
+#: .\sight\models.py:123
+msgid "reply for comment"
+msgstr "评论的回复"
+
+#: .\sight\models.py:127
+msgid "img related"
+msgstr "关联图片"
+
+#: .\sight\models.py:131 .\sight\models.py:132
+msgid "Comment"
+msgstr "评论"
+
+#: .\sight\serializers.py:13 .\sight\serializers.py:29
+msgid "comment_count of sight"
+msgstr "景点的评论数量"
+
+#: .\sight\serializers.py:28
+msgid "images of sight"
+msgstr "景点下的图片"
+
+#: .\sight\serializers.py:30
+msgid "image count of sight"
+msgstr "景点下的图片数量"
+
+#: .\sight\serializers.py:31
+msgid "full address"
+msgstr "完整地址"
+
+#: .\sight\serializers.py:82
+msgid "images of comment"
+msgstr "评论中的图片"
+
+#: .\sight\serializers.py:83
+msgid "comment created at"
+msgstr "创建时间"
+
+#: .\sight\serializers.py:110 .\sight\serializers.py:135
+msgid "entry way"
+msgstr "入园方式"
+
+#: .\sight\views.py:29
+msgid "Invalid Params"
+msgstr "非法参数"
+
+#: .\system\apps.py:8 .\system\apps.py:9
+msgid "system"
+msgstr "系统"
+
+#: .\system\models.py:13
+msgid "type"
+msgstr "类型"
+
+#: .\system\models.py:14 .\system\models.py:37
+msgid "img url"
+msgstr "图片url"
+
+#: .\system\models.py:15
+msgid "start time"
+msgstr "开始于"
+
+#: .\system\models.py:16
+msgid "end time"
+msgstr "结束于"
+
+#: .\system\models.py:17
+msgid "reorder"
+msgstr "排序"
+
+#: .\system\models.py:18
+msgid "link to"
+msgstr "跳转地址"
+
+#: .\system\models.py:21 .\system\models.py:22
+msgid "Slider"
+msgstr "轮播图"
+
+#: .\system\models.py:39
+msgid "summary"
+msgstr "图片说明"
+
+#: .\system\models.py:44
+msgid "who upload"
+msgstr "上传人"
+
+#: .\system\models.py:53 .\system\models.py:54
+msgid "ImageRelated"
+msgstr "关联图片"
+
+#: .\utils\models.py:7
+msgid "if is valid"
+msgstr "逻辑删除"

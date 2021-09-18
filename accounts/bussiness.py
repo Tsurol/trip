@@ -56,14 +56,14 @@ def get_user_list(request):
 
 
 def set_verify_code(key, code):
-    # 验证码有效期为300秒
-    cache.set(key, json.dumps(code), 60 * 5)
+    # 验证码有效期为60秒
+    cache.set(key, json.dumps(code), 60)
     return None
 
 
 def register_user(email, phone, nickname, password, code):
     is_email_exists = User.objects.filter(email=email).first()
-    is_phone_exists = User.objects.filter(phone=phone).first()
+    # is_phone_exists = User.objects.filter(phone=phone).first()
     is_nickname_exists = User.objects.filter(nickname=nickname).first()
     if is_nickname_exists:
         return RespCode.InvalidParams.value, _('Invalid nickname')
@@ -91,7 +91,7 @@ def register_user(email, phone, nickname, password, code):
         verify = True
     else:
         result = verify_util.verify_phone(phone=phone)
-        if not result or is_phone_exists:
+        if not result:
             return RespCode.InvalidParams.value, _('Invalid phone format')
         key = 'verify_code_phone:{}'.format(phone)
         cache_phone_code = cache.get(key)
@@ -113,12 +113,15 @@ def register_user(email, phone, nickname, password, code):
         resp = {}
         refresh_dict = get_token_for_user(user)
         # 用户注册即登录:减少用户操作
-        resp['code'] = RespCode.Succeed.value
-        resp['user'] = UserDetailSerializer(user).data
-        resp['profile'] = UserProfileSerializer(user.profile).data
-        resp['refresh'] = refresh_dict.get('refresh', '')
-        resp['access'] = refresh_dict.get('access', '')
-        resp['message'] = 'Success'
+        try:
+            resp['code'] = RespCode.Succeed.value
+            resp['user'] = UserDetailSerializer(user).data
+            resp['profile'] = UserProfileSerializer(user.profile).data
+            resp['refresh'] = refresh_dict.get('refresh', '')
+            resp['access'] = refresh_dict.get('access', '')
+            resp['message'] = 'Success'
+        except Exception as e:
+            print(e)
         return RespCode.Succeed.value, resp
 
 
